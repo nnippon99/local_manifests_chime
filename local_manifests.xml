@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <!-- Remotes -->
+  <remote name="astechpro20" fetch="https://github.com/AsTechpro20" />
+  <remote name="halcyon" fetch="https://gitlab.com/halcyonproject" />
+  <remote name="lilium" fetch="https://github.com/liliumproject" />
+
+  <!-- Device Trees -->
+  <project path="device/xiaomi/chime" name="device_xiaomi_chime" remote="astechpro20" revision="Infinity-X-15" />
+
+  <!-- kernel tree -->
+  <project path="kernel/xiaomi/chime" name="kernel_xiaomi_chime" remote="lilium" revision="ursinia" />
+
+  <!-- Vendor Trees -->
+  <project path="vendor/xiaomi/lime" name="vendor_xiaomi_lime" remote="halcyon" revision="ursinia" />
+  <project path="vendor/xiaomi/chime" name="vendor_xiaomi_chime" remote="halcyon" revision="ursinia" />
+  <project path="vendor/xiaomi/citrus" name="vendor_xiaomi_citrus" remote="halcyon" revision="ursinia" /> 
+  
+</manifest>
