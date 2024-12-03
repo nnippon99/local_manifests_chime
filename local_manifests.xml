@@ -7,7 +7,7 @@
   <remote name="nnippon99" fetch="https://github.com/nnippon99" />
   
   <!-- Device Trees -->
-  <project path="device/xiaomi/chime" name="device_xiaomi_chime" remote="astechpro20" revision="infinity-15" />
+  <project path="device/xiaomi/chime" name="device_xiaomi_chime" remote="astechpro20" revision="lineage-22" />
 
   <!-- kernel tree -->
   <project path="kernel/xiaomi/chime" name="kernel_xiaomi_chime" remote="nnippon99" revision="viola-ksu" />
