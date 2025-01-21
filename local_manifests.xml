@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  
-  <!-- Remotes -->
-  <remote name="astechpro20" fetch="https://github.com/AsTechpro20" />
-  <remote name="halcyon" fetch="https://gitlab.com/halcyonproject/blobs" />
-  <remote name="nnippon99" fetch="https://github.com/nnippon99" />
-  
-  <!-- Device Trees -->
-  <project path="device/xiaomi/chime" name="device_xiaomi_chime" remote="astechpro20" revision="lineage-22" />
 
-  <!-- kernel tree -->
-  <project path="kernel/xiaomi/chime" name="kernel_xiaomi_chime" remote="nnippon99" revision="viola-ksu" />
+  <!-- Remotes -->
+  <remote name="github" fetch="https://github.com/nnippon99" />
+  <remote name="gitlab" fetch="https://gitlab.com/nnippon99" />
+  <remote name="LineageOS" fetch="https://github.com/lineageos" />
+
+  <!-- Device Trees -->
+  <project path="device/xiaomi/chime" name="device_xiaomi_chime" remote="github" revision="viola" />
+
+  <!-- Kernel Trees -->
+  <project path="kernel/xiaomi/chime" name="kernel_xiaomi_chime" remote="github" revision="viola" />
+
+  <!-- Hardware Tree -->
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="LineageOS" revision="lineage-22.1" />
 
   <!-- Vendor Trees -->
-  <project path="vendor/xiaomi/lime" name="vendor_xiaomi_lime" remote="halcyon" revision="ursinia" />
-  <project path="vendor/xiaomi/chime" name="vendor_xiaomi_chime" remote="halcyon" revision="ursinia" />
-  <project path="vendor/xiaomi/citrus" name="vendor_xiaomi_citrus" remote="halcyon" revision="ursinia" /> 
-  
+  <project path="vendor/xiaomi/lime" name="vendor_xiaomi_lime" remote="gitlab" revision="viola" />
+  <project path="vendor/xiaomi/chime" name="vendor_xiaomi_chime" remote="gitlab" revision="viola" />
+  <project path="vendor/xiaomi/citrus" name="vendor_xiaomi_citrus" remote="gitlab" revision="viola" /> 
+
 </manifest>
